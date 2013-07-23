@@ -1,4 +1,4 @@
-//by SymbolixDEV
+//*by SymbolixDEV
 #include "ScriptPCH.h"
 #include "Language.h"
 
