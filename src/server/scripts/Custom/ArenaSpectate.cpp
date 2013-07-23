@@ -29,7 +29,13 @@ EndScriptData */
 #include "BattlegroundMgr.h"
 #include "WorldSession.h"
 #include "Player.h"
+#include "ArenaTeam.h"
+#include "Battleground.h"
+#include "BattlegroundMgr.h"
+#include "CreatureTextMgr.h"
+#include "Config.h"
 
+int8 UsingGossip;
 class arena_spectator_commands : public CommandScript
 {
     public:
@@ -46,7 +52,7 @@ class arena_spectator_commands : public CommandScript
             Player* player = handler->GetSession()->GetPlayer();
             if (target == player || target_guid == player->GetGUID())
             {
-                handler->PSendSysMessage("Can´t Spectate self.");
+                handler->PSendSysMessage("Canï¿½t Spectate self.");
                 handler->SetSentErrorMessage(true);
                 return false;
             }
@@ -347,8 +353,9 @@ class npc_arena_spectator : public CreatureScript
 
         bool OnGossipHello(Player* pPlayer, Creature* pCreature)
         {
-			pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Games: 2100+mmr", GOSSIP_SENDER_MAIN, NPC_SPECTATOR_ACTION_LIST_TOP_GAMES);
-			pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Games: 1000+mmr", GOSSIP_SENDER_MAIN, NPC_SPECTATOR_ACTION_LIST_GAMES);
+			pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Spectate 2vs2 Games", GOSSIP_SENDER_MAIN, NPC_SPECTATOR_ACTION_LIST_TOP_GAMES);
+			pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Spectate 3vs3 Games", GOSSIP_SENDER_MAIN, NPC_SPECTATOR_ACTION_LIST_GAMES);
+			pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Spectate Player", GOSSIP_SENDER_MAIN, NPC_SPECTATOR_ACTION_SELECTED_PLAYER);
             pPlayer->SEND_GOSSIP_MENU(DEFAULT_GOSSIP_MESSAGE, pCreature->GetGUID());
             return true;
         }
