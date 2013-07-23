@@ -21,6 +21,13 @@ set(scripts_STAT_SRCS
   Custom/ChangeToken.cpp
   Custom/PvPIsleScript.cpp
   Custom/arenaquecom.cpp
+  Custom/beastmaster.cpp
+  Custom/enchanter.cpp
+  Custom/KillStreak.cpp
+  Custom/mmr.cpp
+  Custom/morph.cpp
+  Custom/npcdoctor.cpp
+  Custom/proffession.cpp
 )
 
 message("  -> Prepared: Custom")

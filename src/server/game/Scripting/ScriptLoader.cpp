@@ -29,11 +29,18 @@ void AddSC_arenaqueue();
 void AddSC_npc_teleport();
 void AddSC_npc_supporter();
 void AddSC_guru_event();
+void AddSC_Npc_Beastmaster();
 void AddSC_NPC_Transmogrify();
 void AddSC_arena_spectator_script();
 void AddSC_fast_arena_start();
 void AddSC_npc_change();
 void AddSC_vitality_pvp_island();
+void AddSC_npc_enchantment();
+void AddSC_PvP_System();
+void AddSC_npc_mmr_reset();
+void AddSC_Morph_npc();
+void AddSC_custom_npc_doctor();
+void AddSC_Professions_NPC();
 
 // spells
 void AddSC_deathknight_spell_scripts();
@@ -53,6 +60,7 @@ void AddSC_example_spell_scripts();
 void AddSC_holiday_spell_scripts();
 
 void AddSC_SmartSCripts();
+
 
 //Commands
 void AddSC_account_commandscript();
@@ -1323,6 +1331,13 @@ void AddCustomScripts()
     AddSC_npc_change();
     AddSC_arena_spectator_script();
     AddSC_vitality_pvp_island();
+    AddSC_Npc_Beastmaster();
+    AddSC_npc_enchantment();
+    AddSC_PvP_System();
+    AddSC_npc_mmr_reset();
+    AddSC_Morph_npc();
+    AddSC_custom_npc_doctor();
+    AddSC_Professions_NPC();
 
 #endif
 }
