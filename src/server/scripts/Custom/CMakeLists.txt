@@ -11,7 +11,6 @@
 set(scripts_STAT_SRCS
   ${scripts_STAT_SRCS}
   Custom/VendorScript.cpp
-  Custom/UtilityCmd.cpp
   Custom/Supporter.cpp
   Custom/Teleporter.cpp
   Custom/GurubashiEvent.cpp
@@ -21,6 +20,7 @@ set(scripts_STAT_SRCS
   Custom/ArenaSpectate.cpp
   Custom/ChangeToken.cpp
   Custom/PvPIsleScript.cpp
+  Custom/arenaquecom.cpp
 )
 
 message("  -> Prepared: Custom")

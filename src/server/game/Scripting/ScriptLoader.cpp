@@ -25,7 +25,7 @@ void AddSC_example_misc();
 void AddSC_example_commandscript();
 
 //Custom Scriptes
-void AddSC_utility_commandscript();
+void AddSC_arenaqueue();
 void AddSC_npc_teleport();
 void AddSC_npc_supporter();
 void AddSC_guru_event();
@@ -1313,7 +1313,7 @@ void AddCustomScripts()
 {
 #ifdef SCRIPTS
     /* This is where custom scripts should be added. */
-    AddSC_utility_commandscript();
+    AddSC_arenaqueue();
     AddSC_EM_trader();
     AddSC_npc_teleport();
     AddSC_npc_supporter();
