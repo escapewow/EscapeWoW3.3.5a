@@ -353,7 +353,7 @@ class npc_arena_spectator : public CreatureScript
 
         bool OnGossipHello(Player* pPlayer, Creature* pCreature)
         {
-	     pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Spectate 3vs3 Games", GOSSIP_SENDER_MAIN, NPC_SPECTATOR_ACTION_LIST_TOP_GAMES);
+	     pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Spectate: 3vs3 Games", GOSSIP_SENDER_MAIN, NPC_SPECTATOR_ACTION_LIST_TOP_GAMES);
 	     pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Spectate: 2vs2 Games", GOSSIP_SENDER_MAIN, NPC_SPECTATOR_ACTION_LIST_GAMES);
             pPlayer->SEND_GOSSIP_MENU(DEFAULT_GOSSIP_MESSAGE, pCreature->GetGUID());
             return true;
