@@ -25,7 +25,6 @@ void AddSC_example_misc();
 void AddSC_example_commandscript();
 
 //Custom Scriptes
-void AddSC_arenaqueue();
 void AddSC_npc_teleport();
 void AddSC_npc_supporter();
 void AddSC_guru_event();

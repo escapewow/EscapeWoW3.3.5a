@@ -20,7 +20,6 @@ set(scripts_STAT_SRCS
   Custom/ArenaSpectate.cpp
   Custom/ChangeToken.cpp
   Custom/PvPIsleScript.cpp
-  Custom/arenaquecom.cpp
   Custom/beastmaster.cpp
   Custom/enchanter.cpp
   Custom/KillStreak.cpp
