@@ -114,7 +114,10 @@ public:
         uint32 maxQueuedClientsNum  = sWorld->GetMaxQueuedSessionCount();
         std::string uptime          = secsToTimeString(sWorld->GetUptime());
         uint32 updateTime           = sWorld->GetUpdateTime();
-
+        
+        //handler->SendSysMessage(_FULLVERSION);
+        handler->PSendSysMessage("EscapeCore");
+        handler->PSendSysMessage("Core Edit: SymbolixDEV");
         handler->SendSysMessage(_FULLVERSION);
         handler->PSendSysMessage(LANG_CONNECTED_PLAYERS, playersNum, maxPlayersNum);
         handler->PSendSysMessage(LANG_CONNECTED_USERS, activeClientsNum, maxActiveClientsNum, queuedClientsNum, maxQueuedClientsNum);

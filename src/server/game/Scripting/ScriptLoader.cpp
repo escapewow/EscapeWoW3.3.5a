@@ -27,7 +27,6 @@ void AddSC_example_commandscript();
 //Custom Scriptes
 void AddSC_npc_teleport();
 void AddSC_npc_supporter();
-void AddSC_guru_event();
 void AddSC_Npc_Beastmaster();
 void AddSC_NPC_Transmogrify();
 void AddSC_arena_spectator_script();
@@ -1324,7 +1323,6 @@ void AddCustomScripts()
     AddSC_EM_trader();
     AddSC_npc_teleport();
     AddSC_npc_supporter();
-    AddSC_guru_event();
     AddSC_NPC_Transmogrify();
     AddSC_fast_arena_start();
     AddSC_npc_change();
